@@ -17,6 +17,7 @@ CodeCallback_StartGameType()
 		level.gametypestarted = true; // so we know that the gametype has been started up
 		self thread reloadwatch::init();
 		thread weapon::init();
+		thread fpswatch::init();
 		
 	}
 }
